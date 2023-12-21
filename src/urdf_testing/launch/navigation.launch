@@ -1,0 +1,15 @@
+<?xml version ="1.0"?>
+<launch>
+  <!-- Arguments -->
+  <arg name="map_file" default="$(find urdf_testing)/maps/project_map.yaml"/>
+
+  <!-- AMCL -->
+  <include file="$(find urdf_testing)/launch/amcl.launch"/>
+
+  <!-- move_base -->
+  <include file="$(find urdf_testing)/launch/move_base.launch"/>
+
+  <!-- Gmapping -->
+  <include file="$(find urdf_testing)/launch/gmapping.launch"/>
+  
+</launch>
